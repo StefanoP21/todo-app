@@ -8,6 +8,7 @@ const createTask = (evento) => {
     const task = document.createElement("li");
     task.classList.add("card");
     input.value = "";
+    //template strings
     //backticks
     const content = `<div>
     <i class="far fa-check-square icon"></i>
@@ -42,3 +43,14 @@ btn.addEventListener("click", (evento) => {
 */
 
 btn.addEventListener("click", createTask);
+
+/*
+NODOS
+
+Existen otros métodos que podemos utilizar para manipular nodos:
+
+- insertBefore(padre, hijo): Coloca un nodo antes del otro
+- replaceChild(elemento1, elemento2): Sustituye el nodo del elemento 1 por el   nodo del elemento 2
+- removeChild(elemento): Remueve un nodo del árbol
+*/
+
